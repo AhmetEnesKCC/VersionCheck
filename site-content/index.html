@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles/loading.css" />
+    <script>
+      var exports = {};
+    </script>
+    <script src="../out/client/app.js"></script>
+    <title>Version Check</title>
+    <link
+      rel="stylesheet"
+      href="../node_modules/@fortawesome/fontawesome-free/css/all.css"
+    />
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="./styles/header.css" />
+    <link rel="stylesheet" href="./styles/navbar.css" />
+    <link rel="stylesheet" href="./styles/content.css" />  
+    <link rel="stylesheet" href="./styles/appbar.css" />
+  </head>
+  <body class="transition">
+    <div class="appbar">
+      <div class="buttons">
+        <i class="minimize fa fa-minus"></i>
+        <i class="close fa fa-times"></i>
+      </div>
+    </div></div>
+    <header class="transition">
+      <div class="non_drag theme_button"></div>
+      <div class="title">
+        <div class="text"></div>
+        <button class="version_info">
+          <i class="fa fa-question-circle"></i>
+        </button>
+      </div>
+      <div class="app_buttons"></div>
+    </header>
+    <div class="content transition">
+      <div class="node content_container">
+        <div class="version_card">
+          <div class="card_title">Stable</div>
+          <div class="card_content stable"></div>
+          <div class="card_option">
+            <div class="checkbox" id="node-1">
+              <i class="fa fa-check"></i>
+            </div>
+            <div class="text">Notify me when new version</div>
+          </div>
+        </div>
+        <div class="version_card secondary">
+          <div class="card_title">Latest</div>
+          <div class="card_content latest"></div>
+          <div class="card_option">
+            <div class="checkbox" id="node-2">
+              <i class="fa fa-check"></i>
+            </div>
+            <div class="text">Notify me when new version</div>
+          </div>
+        </div>
+      </div>
+      <div class="npm content_container">
+        <div class="version_card">
+          <div class="card_title">Latest</div>
+          <div class="card_content latest"></div>
+          <div class="card_option">
+            <div class="checkbox" id="npm-1">
+              <i class="fa fa-check"></i>
+            </div>
+            <div class="text">Notify me when new version</div>
+          </div>
+        </div>
+      </div>
+      <div class="yarn content_container">
+        <div class="version_card">
+          <div class="card_title">Classic Stable</div>
+          <div class="card_content latest"></div>
+          <div class="card_option">
+            <div class="checkbox" id="yarn-1">
+              <i class="fa fa-check"></i>
+            </div>
+            <div class="text">Notify me when new version</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="navbar non_drag transition">
+      <div class="navigation node nav_node">
+        <i class="fab fa-node"></i>
+      </div>
+      <div class="navigation npm nav_npm">
+        <i class="fab fa-npm"></i>
+      </div>
+      <div class="navigation yarn nav_yarn">
+        <i class="fab fa-yarn"></i>
+      </div>
+    </div>
+  </body>
+</html>
